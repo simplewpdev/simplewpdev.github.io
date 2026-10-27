@@ -491,6 +491,80 @@ a{
     0 10px 25px rgba(139,92,246,.18);
 }
 
+.contact-actions{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+/* Base Button */
+.btn-contact{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    height:42px;
+    padding:0 20px;
+
+    border-radius:999px;
+
+    font-size:14px;
+    font-weight:500;
+
+    text-decoration:none;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+}
+
+/* Contact Me */
+.btn-contact.primary{
+    color:#fff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #8b5cf6,
+        #a855f7
+    );
+
+    box-shadow:
+    0 0 0 1px rgba(139,92,246,.2);
+}
+
+.btn-contact.primary:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(139,92,246,.35);
+}
+
+/* Call Button */
+.btn-contact.secondary{
+    color:#fff;
+
+    background:
+        rgba(15,23,42,.9);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+}
+
+.btn-contact.secondary:hover{
+    transform:translateY(-2px);
+
+    border-color:
+        rgba(139,92,246,.5);
+
+    box-shadow:
+        0 10px 24px rgba(139,92,246,.15);
+}    
+
 .contact-grid{
 
     display:grid;
